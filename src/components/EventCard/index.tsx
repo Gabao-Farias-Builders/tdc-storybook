@@ -1,5 +1,5 @@
 import React from "react";
-import { EventCardWrapper } from "./styles";
+import { ActiveFilter, EventCardWrapper, TextWrapper } from "./styles";
 
 type Props = {
   /**
@@ -10,6 +10,10 @@ type Props = {
    * Defines secundary color from gradient
    */
   secondaryGradientColor?: string;
+  /**
+   * Defines a dark mask if is inactive
+   */
+  isActive?: boolean;
   /**
    * Defines a shadow if true
    */
@@ -27,13 +31,18 @@ type Props = {
 const EventCard: React.FC<Props> = ({
   primaryGradientColor,
   secondaryGradientColor,
+  isActive = true,
   hasShadow,
   textColor,
   text
 }) => {
   return (
     <EventCardWrapper {...{ primaryGradientColor, hasShadow, secondaryGradientColor, textColor }}>
-      {text}
+      <ActiveFilter isActive={isActive}>
+        <TextWrapper>
+          {text}
+        </TextWrapper>
+      </ActiveFilter>
     </EventCardWrapper>
   );
 };
