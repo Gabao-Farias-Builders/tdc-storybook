@@ -1,5 +1,7 @@
 import theme from './theme';
 
+import './reset.css';
+
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
