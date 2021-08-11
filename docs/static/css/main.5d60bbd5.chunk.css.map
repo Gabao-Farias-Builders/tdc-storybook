@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.5d60bbd5.chunk.css","sources":["webpack:///.storybook/reset.css"],"sourcesContent":["* {\n  padding: 0;\n  margin: 0;\n}\n\nbutton {\n  border: none;\n}\n"],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;","sourceRoot":""}
