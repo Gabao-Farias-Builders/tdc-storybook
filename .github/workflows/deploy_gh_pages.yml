@@ -5,11 +5,12 @@ on:
     branches: [master]
 
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-node@v1
-      with:
-        node-version: '16.x'
-    - name: 
-      run: npx storybook-to-ghpages
+  deploy_gh_pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - name: Deploy to GH Pages
+        run: npx storybook-to-ghpages
