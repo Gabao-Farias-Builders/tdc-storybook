@@ -3,7 +3,7 @@ import { create } from '@storybook/theming';
 export default create({
   base: 'dark',
 
-  colorSecondary: '#009945',
+  colorSecondary: '#009946',
 
   appBg: '#101110',
   appContentBg: '#202120',
