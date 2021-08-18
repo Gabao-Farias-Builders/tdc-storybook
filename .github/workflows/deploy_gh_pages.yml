@@ -12,5 +12,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '16.x'
+      - uses: 
+      - name: Install dependencies
+        run: yarn
       - name: Deploy to GH Pages
-        run: npx storybook-to-ghpages
+        run: yarn storybook-to-ghpages
