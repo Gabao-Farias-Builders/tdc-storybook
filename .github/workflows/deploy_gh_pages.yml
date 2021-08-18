@@ -15,4 +15,4 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Deploy to GH Pages
-        run: yarn storybook-to-ghpages
+        run: npm run deploy-storybook -- --ci --host-token-env-variable=GITHUB_TOKEN
