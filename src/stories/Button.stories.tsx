@@ -19,7 +19,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
 export const Orange = Template.bind({});
 Orange.args = {
-  label: "CALL4PAPERS"
+  label: "PROGRAMAÇÃO"
 };
 
 export const Yellow = Template.bind({});
@@ -29,4 +29,22 @@ Yellow.args = {
   bottomBarColor: "#d39815",
   bottomBarColorHover: "#f3b633",
   label: "INSCRIÇÕES"
+};
+
+export const DarkGreen = Template.bind({});
+DarkGreen.args = {
+  contentBackgroundColor: "#2e4837",
+  contentBackgroundColorHover: "#466d53",
+  bottomBarColor: "#466d53",
+  bottomBarColorHover: "#2e4837",
+  label: "ASSISTA AOS VÍDEOS"
+};
+
+export const Violet = Template.bind({});
+Violet.args = {
+  contentBackgroundColor: "#43273b",
+  contentBackgroundColorHover: "#5c3d56",
+  bottomBarColor: "#5c3d56",
+  bottomBarColorHover: "#43273b",
+  label: "ASSISTA AOS VÍDEOS"
 };
